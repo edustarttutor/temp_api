@@ -1,0 +1,4 @@
+{% autoescape off %}
+Hi {{ user.full_name }},
+Please click on the link to verify your email, https://www.edustarttutors.com/#/confirm-email/{{ user.pk }}/{{ token }}/
+{% endautoescape %}

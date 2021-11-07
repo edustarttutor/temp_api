@@ -1,0 +1,10 @@
+services:
+  edustart_drf:
+    container_name: drf
+    build:
+      context: ./app/drf/
+    image: b5f3a20709b0
+    ports: 
+      - "8003:80"
+    volumes: 
+      - "./app/drf:/app/drf/"

@@ -1,0 +1,7 @@
+from practiceQuestion.models import Questions
+from django.contrib import admin
+
+# Register your models here.
+
+
+admin.site.register(Questions)

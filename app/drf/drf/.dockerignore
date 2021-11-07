@@ -1,0 +1,5 @@
+venv/
+notes.txt
+.idea/
+__pycache__/
+.git/
