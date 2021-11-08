@@ -16,6 +16,7 @@ urlpatterns = [
     path('', include('subject_related.urls', namespace='subject_related')),
 
     path('edustart_admin/', include('administrator.urls', namespace='edustart_admin')),
+    path('edustart_admin/past-question/', include('past_question.urls', namespace='past_question')),
 
     path('token/obtain/', CustomTokenObtainPair.as_view(), name='token-obtain'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token-refresh'),
