@@ -29,3 +29,8 @@ class PastQuestionsAdmin(admin.ModelAdmin):
 @admin.register(PastQuestionAnswerConnector)
 class PastQuestionAnswerConnectorAdmin(admin.ModelAdmin):
     list_display = ("question", "answer")
+
+
+@admin.register(PastQuestionUserAnswers)
+class PastQuestionUserAnswersApiAdmin(admin.ModelAdmin):
+    list_display = ("student", "test_taken_on", "test_type", "time_estimate", "score", "overall_score")
