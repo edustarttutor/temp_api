@@ -1,0 +1,13 @@
+FROM python:3.9
+
+RUN pip install Pillow
+
+RUN mkdir /app
+RUN mkdir /app/drf
+WORKDIR /app/drf
+
+COPY requirements.txt ./requirements.txt
+RUN pip install -r requirements.txt
+
+EXPOSE 8000
+EXPOSE 80

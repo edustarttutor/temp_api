@@ -1,0 +1,11 @@
+services:
+  edustart_drf:
+    container_name: drf_aws
+    build:
+      context: ./app/drf/
+      dockerfile: DockerfileAWS
+    command: "python3 manage.py runserver 0.0.0.0:8000"
+    ports: 
+      - "8000:8000"
+    volumes: 
+      - "./app/drf:/app/drf/"
